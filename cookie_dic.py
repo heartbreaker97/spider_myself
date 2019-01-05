@@ -7,8 +7,10 @@ conf = configparser.ConfigParser()
 conf.read('config.ini')
 qq = conf.get('qq','qq')
 pwd = conf.get('qq','pwd')
-chromedriver = 'C:/Users/13180/AppData/Local/Google/Chrome/Application/chromedriver.exe'
-driver = webdriver.Chrome(chromedriver)
+#如未设置环境变量，那么需要去掉下列注释，更改路径
+#chromedriver = 'C:/Users/13180/AppData/Local/Google/Chrome/Application/chromedriver.exe'
+#driver = webdriver.Chrome(chromedriver)
+driver = webdriver.Chrome()
 driver.get('https://user.qzone.qq.com/'+qq+'/main')
 driver.switch_to.frame('login_frame')
 #找到账号密码登陆的地方

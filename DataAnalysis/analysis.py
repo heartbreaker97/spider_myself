@@ -113,7 +113,7 @@ class DataAnalysis:
     def plot_data(self,lists, infor):
         import numpy as np
         fig, ax = plt.subplots()
-        myfont = font_manager.FontProperties(fname='G:\python_shell\PycharmProjects\QzoneSpider_myself\spider\DataAnalysis\GB2312.ttf')
+        myfont = font_manager.FontProperties(fname='.\GB2312.ttf')
         name_list = []
         count_list = []
         for list in lists:
